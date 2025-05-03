@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Шкафчиково</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="container-fluid df a-center">
+            <div class="navbar__logo">
+                <a href="index.html"  class="df a-end">
+                    <img src="img/logo.svg" alt="logo">
+                    кафчиково
+                </a>
+            </div>
+            <ul class="menu df a-center">
+                <li class="menu__item">
+                    <a href="catalog.html" class="menu__link">Каталог</a>
+                    <ul class="menu__sub">
+                        <li class="menu__item">
+                            <a href="services.html" class="menu__link">Офисная мебель</a>
+                            <ul class="menu__sub dn">
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">Офисные кресла</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">Офисные столы</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">Офисные шкафы</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">Офисные кухни</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">Офисные тумбы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="portfolio.html" class="menu__link">Мебель для детских садов</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__link">Школьная мебель</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__link">Комплексное оснащение офисов</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__link">Комплексное оснащение
+                                детских садов и школ</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="services.html" class="menu__link">Услуги</a>
+                </li>
+                <li class="menu__item">
+                    <a href="portfolio.html" class="menu__link">Портфолио</a>
+                </li>
+                <li class="menu__item">
+                    <a href="about.html" class="menu__link">О компании</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contacts.html" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+            <div class="search">
+                <form action="" class="search__form df">
+
+                    <input type="text" class="search__input">
+                    <button class="btn btn__search"></button>
+                </form>
+            </div>
+
+            <div class="navbar__contacts df f-column">
+                <a href="tel:+7 (929) 902-23-44" class="navbar__phone">+7 (929) 902-23-44</a>
+                <a href="mailto:info@gcosnova.ru" class="navbar__mail">info@gcosnova.ru</a>
+            </div>
+            <div class="navbar__login">
+                <a href="" class="btn btn__login"> Войти</a>
+            </div>
+            <div class="navbar__cart">
+                <a href="" class="btn btn__cart">
+                    <span class="cart__count">5</span>
+                </a>
+            </div>
+            <button class="btn mobile__btn dn"></button>
+        </div>
+    </nav>
+    <div class="menu__box dn">
+        <div class="search">
+            <form action="" class="search__form df">
+
+                <input type="text" class="search__input">
+                <button class="btn btn__search"></button>
+            </form>
+        </div>
+        <ul class="menu df a-center">
+            <li class="menu__item">
+                <a href="catalog.html" class="menu__link">Каталог</a>
+                <button class="btn has-sub"></button>
+                <ul class="menu__sub">
+                    <li class="menu__item">
+                        <a href="services.html" class="menu__link">Офисная мебель</a>
+                        <button class="btn has-sub"></button>
+                        <ul class="menu__sub dn">
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">Офисные кресла</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">Офисные столы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">Офисные шкафы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">Офисные кухни</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">Офисные тумбы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="portfolio.html" class="menu__link">Мебель для детских садов</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about.html" class="menu__link">Школьная мебель</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about.html" class="menu__link">Комплексное оснащение офисов</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about.html" class="menu__link">Комплексное оснащение
+                            детских садов и школ</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item">
+                <a href="services.html" class="menu__link">Услуги</a>
+            </li>
+            <li class="menu__item">
+                <a href="portfolio.html" class="menu__link">Портфолио</a>
+            </li>
+            <li class="menu__item">
+                <a href="about.html" class="menu__link">О компании</a>
+            </li>
+            <li class="menu__item">
+                <a href="contacts.html" class="menu__link">Контакты</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<main>
+    <section class="banner swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="banner__item">
+                    <div class="container df">
+                        <div class="banner__left">
+                            <h1 class="banner__title">
+                                Производство и оптовая <br> продажа детской, школьной и <br> офисной мебели
+                            </h1>
+                            <button class="btn btn__orange btn__request">Заказать звонок</button>
+                        </div>
+                        <div class="banner__right">
+                            <div class="banner__product df">
+                                <img src="img/p1.svg" alt="p1">
+                                <img src="img/p2.svg" alt="p2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="banner__item">
+                    <div class="container df">
+                        <div class="banner__left">
+                            <h1 class="banner__title">
+                                Производство и оптовая <br> продажа детской, школьной и <br> офисной мебели
+                            </h1>
+                            <button class="btn btn__orange btn__request">Заказать звонок</button>
+                        </div>
+                        <div class="banner__right">
+                            <div class="banner__product df">
+                                <img src="img/p1.svg" alt="p1">
+                                <img src="img/p2.svg" alt="p2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="features__list df j-spc-btw">
+                <div class="features__item df">
+                    <div class="features__icon">
+                        <img src="img/icon1.svg" alt="icon">
+                    </div>
+                    <div class="features__text">
+                        <h4>Мы всегда на связи 24/7</h4>
+                        <p>Обслуживание клиентов 24 часа 7 дней в неделю</p>
+                    </div>
+                </div>
+                <div class="features__item df">
+                    <div class="features__icon">
+                        <img src="img/icon2.svg" alt="icon">
+                    </div>
+                    <div class="features__text">
+                        <h4>Высокий уровень сервиса</h4>
+                        <p>Профессиональная сборка мебели.
+                            Контроль качества</p>
+                    </div>
+                </div>
+                <div class="features__item df">
+                    <div class="features__icon">
+                        <img src="img/icon4.svg" alt="icon">
+                    </div>
+                    <div class="features__text">
+                        <h4>Новый подход к продажам</h4>
+                        <p>Вся информация о товаре легко доступна и раскрыта на 100%</p>
+                    </div>
+                </div>
+                <div class="features__item df">
+                    <div class="features__icon">
+                        <img src="img/icon3.svg" alt="icon">
+                    </div>
+                    <div class="features__text">
+                        <h4>Умная система рекомендаций</h4>
+                        <p>Мы покажем товар посетителям, которым он интересен</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <h2 class="section__title">Каталог</h2>
+            <div class="catalog__list df">
+
+                <a href="office-furniture.html" class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="img/c1.svg" alt="c1">
+                    </div>
+                    <div class="catalog__info">
+                        <p>Кресла и стулья для офиса</p>
+                        <h3>Офисная мебель</h3>
+                    </div>
+                </a>
+                <a  href="office-furniture.html"  class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="img/c3.svg" alt="c1">
+                    </div>
+                    <div class="catalog__info">
+                        <p>Игровые группы</p>
+                        <h3>Мебель для детских садов</h3>
+                    </div>
+                </a>
+                <a  href="office-furniture.html"  class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="img/c2.svg" alt="c1">
+                    </div>
+                    <div class="catalog__info">
+                        <p>Школьные шкафы</p>
+                        <h3>Школьная мебель</h3>
+                    </div>
+                </a>
+            </div>
+            <a href="catalog.html" class="btn btn__orange--outline">Перейти в каталог</a>
+        </div>
+    </section>
+    <section class="features-products">
+        <div class="container">
+            <h2 class="section__title">Популярные товары</h2>
+            <div class="products swiper df">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product__status product__status--new">новинка</div>
+                            <div class="product__img">
+                                <img src="img/product1.svg" alt="product">
+                            </div>
+                            <h4 class="product__category">Офисные кресла</h4>
+                            <h3 class="product__name">Джейсон КР01.00.77 Велюр Vivaldi...</h3>
+                            <div class="product__review df">
+                                <div class="product__stars">
+                                    <img src="img/4.svg" alt="4">
+                                </div>
+                                <p>3 отзыва</p>
+
+                            </div>
+                            <div class="product__settings dn">
+                                <p class="df j-spc-btw a-center">Вес пользователя до
+                                <span>120 кг</span>
+                                </p>
+                                <p class="df j-spc-btw a-center">Материал сидения
+                                    <span>Экокожа</span>
+                                </p>
+                                <p class="df j-spc-btw a-center">Страна производитель
+                                    <span>Китай</span>
+                                </p>
+                            </div>
+                            <div class="product__price df j-spc-btw">
+                                <p>8 003₽</p>
+                            </div>
+                            <a href="" class="btn btn__orange--outline btn__buy">Купить в 1 клик</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product__status product__status--new">новинка</div>
+                            <div class="product__img">
+                                <img src="img/product2.png" alt="product">
+                            </div>
+                            <h4 class="product__category">Офисные кресла</h4>
+                            <h3 class="product__name">Джейсон КР01.00.77 Велюр Vivaldi...</h3>
+                            <div class="product__review df">
+                                <div class="product__stars">
+                                    <img src="img/4.svg" alt="4">
+                                </div>
+                                <p>3 отзыва</p>
+
+                            </div>
+                            <div class="product__settings dn">
+                                <p class="df j-spc-btw a-center">Вес пользователя до
+                                    <span>120 кг</span>
+                                </p>
+                                <p class="df j-spc-btw a-center">Материал сидения
+                                    <span>Экокожа</span>
+                                </p>
+                                <p class="df j-spc-btw a-center">Страна производитель
+                                    <span>Китай</span>
+                                </p>
+                            </div>
+                            <div class="product__price df j-spc-btw">
+                                <p>8 003₽</p>
+                            </div>
+                            <a href="" class="btn btn__orange--outline btn__buy">Купить в 1 клик</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product__status product__status--new">новинка</div>
+                            <div class="product__img">
+                                <img src="img/product3.png" alt="product">
+                            </div>
+                            <h4 class="product__category">Офисные кресла</h4>
+                            <h3 class="product__name">Джейсон КР01.00.77 Велюр Vivaldi...</h3>
+                            <div class="product__review df">
+                                <div class="product__stars">
+                                    <img src="img/4.svg" alt="4">
+                                </div>
+                                <p>3 отзыва</p>
+
+                            </div>
+                            <div class="product__settings dn">
+                                <p class="df j-spc-btw a-center">Вес пользователя до
+                                    <span>120 кг</span>
+                                </p>
+                                <p class="df j-spc-btw a-center">Материал сидения
+                                    <span>Экокожа</span>
+                                </p>
+                                <p class="df j-spc-btw a-center">Страна производитель
+                                    <span>Китай</span>
+                                </p>
+                            </div>
+                            <div class="product__price df j-spc-btw">
+                                <p>8 003₽</p>
+                            </div>
+                            <a href="" class="btn btn__orange--outline btn__buy">Купить в 1 клик</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product__status product__status--new">новинка</div>
+                            <div class="product__img">
+                                <img src="img/product4.png" alt="product">
+                            </div>
+                            <h4 class="product__category">Офисные кресла</h4>
+                            <h3 class="product__name">Джейсон КР01.00.77 Велюр Vivaldi...</h3>
+                            <div class="product__review df">
+                                <div class="product__stars">
+                                    <img src="img/4.svg" alt="4">
+                                </div>
+                                <p>3 отзыва</p>
+
+                            </div>
+                            <div class="product__settings dn">
+                                <p class="df j-spc-btw a-center">Вес пользователя до
+                                    <span>120 кг</span>
+                                </p>
+                                <p class="df j-spc-btw a-center">Материал сидения
+                                    <span>Экокожа</span>
+                                </p>
+                                <p class="df j-spc-btw a-center">Страна производитель
+                                    <span>Китай</span>
+                                </p>
+                            </div>
+                            <div class="product__price df j-spc-btw">
+                                <p>8 003₽</p>
+                            </div>
+                            <a href="" class="btn btn__orange--outline btn__buy">Купить в 1 клик</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product__status product__status--new">новинка</div>
+                            <div class="product__img">
+                                <img src="img/product2.png" alt="product">
+                            </div>
+                            <h4 class="product__category">Офисные кресла</h4>
+                            <h3 class="product__name">Джейсон КР01.00.77 Велюр Vivaldi...</h3>
+                            <div class="product__review df">
+                                <div class="product__stars">
+                                    <img src="img/4.svg" alt="4">
+                                </div>
+                                <p>3 отзыва</p>
+
+                            </div>
+                            <div class="product__settings dn">
+                                <p class="df j-spc-btw a-center">Вес пользователя до
+                                    <span>120 кг</span>
+                                </p>
+                                <p class="df j-spc-btw a-center">Материал сидения
+                                    <span>Экокожа</span>
+                                </p>
+                                <p class="df j-spc-btw a-center">Страна производитель
+                                    <span>Китай</span>
+                                </p>
+                            </div>
+                            <div class="product__price df j-spc-btw">
+                                <p>8 003₽</p>
+                            </div>
+                            <a href="" class="btn btn__orange--outline btn__buy">Купить в 1 клик</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <section class="info info--green">
+        <div class="container df">
+            <div class="info__left">
+                <h2>Комплексное оснащение школ</h2>
+                <p>Все используемые предметы должны быть максимально комфортными, безопасными и функциональными. Если помещение небольшое, стоит отдавать предпочтение универсальным предметам, способным выполнять сразу несколько функций. Конкретное количество предметов рассчитывается заранее.</p>
+                <p>Для персонала следует подобрать удобные рабочие кресла, за которым комфортно проводить много времени и не нагружать спину. Кресло руководителя должно выглядеть солидно, быть изготовленным из натуральной или экокожи, с удобными подлокотниками. Не стоит забывать о стульях для посетителей, которые ставятся в приемной, комнате для переговоров, в холле. Если планируется прием большого количества посетителей, лучше купить скамьи и банкетки.</p>
+                <button class="btn btn__orange btn__product-request">Оставить заявку</button>
+            </div>
+            <div class="info__right">
+                <img src="img/info1.png" alt="info">
+            </div>
+        </div>
+    </section>
+    <section class="info info--blue">
+        <div class="container df j-end">
+            <div class="info__right">
+                <img src="img/info2.png" alt="info">
+            </div>
+            <div class="info__left">
+                <h2>Комплексное оснащение детских садов</h2>
+                <p>
+                    Все используемые предметы должны быть максимально комфортными, безопасными и функциональными. Если помещение небольшое, стоит отдавать предпочтение универсальным предметам, способным выполнять сразу несколько функций. Конкретное количество предметов рассчитывается заранее.
+                </p>
+                <p>
+                    Для персонала следует подобрать удобные рабочие кресла, за которым комфортно проводить много времени и не нагружать спину. Кресло руководителя должно выглядеть солидно, быть изготовленным из натуральной или экокожи, с удобными подлокотниками. Не стоит забывать о стульях для посетителей, которые ставятся в приемной, комнате для переговоров, в холле. Если планируется прием большого количества посетителей, лучше купить скамьи и банкетки.
+                </p>
+                <button class="btn btn__orange btn__product-request">Оставить заявку</button>
+            </div>
+        </div>
+    </section>
+    <section class="info info--orange">
+        <div class="container df">
+            <div class="info__left">
+                <h2>Комплексное оснащение офисов</h2>
+                <p>Все используемые предметы должны быть максимально комфортными, безопасными и функциональными. Если помещение небольшое, стоит отдавать предпочтение универсальным предметам, способным выполнять сразу несколько функций. Конкретное количество предметов рассчитывается заранее.</p>
+                <p>Для персонала следует подобрать удобные рабочие кресла, за которым комфортно проводить много времени и не нагружать спину. Кресло руководителя должно выглядеть солидно, быть изготовленным из натуральной или экокожи, с удобными подлокотниками. Не стоит забывать о стульях для посетителей, которые ставятся в приемной, комнате для переговоров, в холле. Если планируется прием большого количества посетителей, лучше купить скамьи и банкетки.</p>
+                <button class="btn btn__orange btn__product-request">Оставить заявку</button>
+            </div>
+            <div class="info__right">
+                <img src="img/info3.png" alt="info">
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="section__title">Наше портфолио</h2>
+            <div class=" portfolio__list swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="grid-set">
+                            <div class="grid-item big">
+                                <img src="img/p3.png" alt="portfolio">
+                                <div class="portfolio__content">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/p1.png" alt="portfolio">
+                                <div class="portfolio__content">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/p2.png" alt="portfolio">
+                                <div class="portfolio__content">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/p1.png" alt="portfolio">
+                                <div class="portfolio__content">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/p2.png" alt="portfolio">
+                                <div class="portfolio__content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Set 2 -->
+                    <div class="swiper-slide">
+                        <div class="grid-set">
+                            <div class="grid-item big">
+                                <img src="img/p3.png" alt="portfolio">
+                                <div class="portfolio__content">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/p1.png" alt="portfolio">
+                                <div class="portfolio__content">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/p2.png" alt="portfolio">
+                                <div class="portfolio__content">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/p1.png" alt="portfolio">
+                                <div class="portfolio__content">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/p2.png" alt="portfolio">
+                                <div class="portfolio__content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container df j-spc-btw">
+            <div class="about__left">
+                <img src="img/about.png" alt="about">
+                <div class="about__employer">
+                    <h4>Маргарита Скрипник</h4>
+                    <p>Специалист по оснащению: школ; офисов; детских садов; специальных учереждений, гос.учереждений. </p>
+                    <h5>Стаж работы 11 лет</h5>
+                </div>
+            </div>
+            <div class="about__right">
+                <h3 class="about__sub">«Шкафчиково» </h3>
+                <h2 class="about__title">
+                    ОСНАЩЕНИЕ ШКОЛ, ДЕТСКИХ САДОВ И ДРУГИХ СОЦИАЛЬНЫХ ОБЪЕКТОВ ПОД КЛЮЧ
+                </h2>
+                <p class="about__text">«Шкафчиково» - это не только опыт и знания наших специалистов, безопасность оборудования, но и самое выгодное коммерческое предложение. </p>
+                <div class="about__comment">
+                    <p>
+                        Наша фабрика располагает не только собственными производственными мощностями, на которых изготавливается вся мебель, но и профессиональным и опытным конструкторским отделом, в который входят профессиональные дизайнеры и конструкторы.
+                        Продукция, которую мы изготавливаем имеет все необходимые сертификаты.
+                    </p>
+                </div>
+                <button class="btn btn__orange btn__request">Заказать звонок</button>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container">
+            <h2 class="section__title">Производители</h2>
+            <div class="partner__list swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/partner1.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner2.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner3.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner4.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner1.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner2.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner3.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner4.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner1.svg" alt="partner1">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+</main>
+<footer>
+    <div class="container">
+        <div class="footer__top df j-spc-btw">
+            <div class="footer__col">
+                <h2 class="footer__title">
+                    <a href="">Наши предложения</a>
+                </h2>
+                <div class="footer__menu df f-column">
+                    <a href="office-furniture.html" class="footer__link">
+                        Офисная мебель
+                    </a>
+                    <a href="" class="footer__link">
+                        Мебель для детских садов
+                    </a>
+                    <a href="" class="footer__link">
+                        Школьная мебель
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">
+                    <a href="services.html">Услуги</a>
+                </h2>
+                <div class="footer__menu df f-column">
+                    <a href="production.html" class="footer__link">
+                        Производство
+                    </a>
+                    <a href="delivery.html" class="footer__link">
+                        Доставка
+                    </a>
+                    <a href="" class="footer__link">
+                        Сборка
+                    </a>
+                    <a href="complex-equipment.html" class="footer__link">
+                        Комплексное оснащение
+                    </a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">
+                    <a href="">Клиенту</a>
+                </h2>
+                <div class="footer__menu df f-column">
+                    <a href="" class="footer__link">
+                        Новости
+                    </a>
+                    <a href="contacts.html" class="footer__link">
+                        Контакты
+                    </a>
+                    <a href="about.html" class="footer__link">
+                        О компании
+                    </a>
+                    <a href="portfolio.html" class="footer__link">
+                        Портфолио
+                    </a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">
+                    Контакты
+                </h2>
+                <div class="footer__contacts">
+                    <a href="" class="footer__phone">
+                        +7 (929) 902-23-44
+                    </a>
+                    <p class="footer__work">с 9:00 до 18:00</p>
+                </div>
+                <button class="btn  btn__orange btn__request">Заказать звонок</button>
+                <div class="footer__contacts">
+                    <a href="mailto:info@gcosnova.ru" class="footer__email">
+                        info@gcosnova.ru
+                    </a>
+                    <p class="footer__address">105094, г. Москва, ул. Золотая, д. 11, стр. 2, оф. 238</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__bottom df j-spc-btw">
+            <div class="footer__col">
+                <a href="index.html" class="footer__logo df a-end">
+                    <img src="img/logo.svg" alt="logo">
+                    кафчиково
+                </a>
+            </div>
+            <div class="footer__col">
+                <p>© 2023 agrachoff.ru</p>
+                <p>Вся представленная на сайте информация, касающаяся характеристик продуктов, наличия на складе, стоимости товаров, носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса Российской Федерации. </p>
+                <p>
+                    <a href="">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="">
+                        Политика обработки файлов cookie
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal modal__request" id="request-modal">
+    <div class="modal__content">
+
+        <button class="btn btn__close"></button>
+        <div class="modal__info">
+            <h2 class="modal__title">Заказать</h2>
+            <form action="" class="modal__form">
+                <div class="form__row df f-column">
+                    <label for="">Телефон</label>
+                    <input type="tel" class="form__input js-phone-mask" placeholder="+7(123) 123-45-67">
+                </div>
+                <div class="form__row df a-center  j-spc-btw">
+                    <button class="btn btn__orange">Заказать звонок</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal__request" id="request-product-modal">
+    <div class="modal__content">
+
+        <button class="btn btn__close"></button>
+        <div class="modal__info">
+            <h2 class="modal__title"> Оставить заявку</h2>
+            <form action="" class="modal__form">
+                <div class="form__row df f-column">
+                    <label for="">Контактное лицо</label>
+                    <input type="text" class="form__input    " placeholder="Контактное лицо">
+                </div>
+                <div class="form__row df f-column">
+                    <label for="">Электронная почта</label>
+                    <input type="email" class="form__input " placeholder="Электронная почта">
+                </div>
+                <div class="form__row df f-column">
+                    <label for="">Телефон</label>
+                    <input type="tel" class="form__input js-phone-mask" placeholder="+7(123) 123-45-67">
+                </div>
+                <div class="form__row df a-center  j-spc-btw">
+                    <button class="btn btn__orange">Оставить заявку</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/inputMask/inputmask.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

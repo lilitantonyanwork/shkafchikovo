@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Шкафчиково</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="container-fluid df a-center">
+            <div class="navbar__logo">
+                <a href="index.html"  class="df a-end">
+                    <img src="img/logo.svg" alt="logo">
+                    кафчиково
+                </a>
+            </div>
+            <ul class="menu df a-center">
+                <li class="menu__item">
+                    <a href="catalog.html" class="menu__link">Каталог</a>
+                    <ul class="menu__sub">
+                        <li class="menu__item">
+                            <a href="services.html" class="menu__link">Офисная мебель</a>
+                            <ul class="menu__sub dn">
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">Офисные кресла</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">Офисные столы</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">Офисные шкафы</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">Офисные кухни</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">Офисные тумбы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="portfolio.html" class="menu__link">Мебель для детских садов</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__link">Школьная мебель</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__link">Комплексное оснащение офисов</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__link">Комплексное оснащение
+                                детских садов и школ</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="services.html" class="menu__link">Услуги</a>
+                </li>
+                <li class="menu__item">
+                    <a href="portfolio.html" class="menu__link">Портфолио</a>
+                </li>
+                <li class="menu__item">
+                    <a href="about.html" class="menu__link">О компании</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contacts.html" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+            <div class="search">
+                <form action="" class="search__form df">
+
+                    <input type="text" class="search__input">
+                    <button class="btn btn__search"></button>
+                </form>
+            </div>
+
+            <div class="navbar__contacts df f-column">
+                <a href="tel:+7 (929) 902-23-44" class="navbar__phone">+7 (929) 902-23-44</a>
+                <a href="mailto:info@gcosnova.ru" class="navbar__mail">info@gcosnova.ru</a>
+            </div>
+            <div class="navbar__login">
+                <a href="" class="btn btn__login"> Войти</a>
+            </div>
+            <div class="navbar__cart">
+                <a href="" class="btn btn__cart">
+                    <span class="cart__count">5</span>
+                </a>
+            </div>
+            <button class="btn mobile__btn dn"></button>
+        </div>
+    </nav>
+    <div class="menu__box dn">
+        <div class="search">
+            <form action="" class="search__form df">
+
+                <input type="text" class="search__input">
+                <button class="btn btn__search"></button>
+            </form>
+        </div>
+        <ul class="menu df a-center">
+            <li class="menu__item">
+                <a href="catalog.html" class="menu__link">Каталог</a>
+                <button class="btn has-sub"></button>
+                <ul class="menu__sub">
+                    <li class="menu__item">
+                        <a href="services.html" class="menu__link">Офисная мебель</a>
+                        <button class="btn has-sub"></button>
+                        <ul class="menu__sub dn">
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">Офисные кресла</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">Офисные столы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">Офисные шкафы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">Офисные кухни</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">Офисные тумбы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="portfolio.html" class="menu__link">Мебель для детских садов</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about.html" class="menu__link">Школьная мебель</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about.html" class="menu__link">Комплексное оснащение офисов</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about.html" class="menu__link">Комплексное оснащение
+                            детских садов и школ</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item">
+                <a href="services.html" class="menu__link">Услуги</a>
+            </li>
+            <li class="menu__item">
+                <a href="portfolio.html" class="menu__link">Портфолио</a>
+            </li>
+            <li class="menu__item">
+                <a href="about.html" class="menu__link">О компании</a>
+            </li>
+            <li class="menu__item">
+                <a href="contacts.html" class="menu__link">Контакты</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<main class="about-page">
+    <section class="page">
+        <div class="container">
+            <div class="breadcrumbs df a-center">
+                <a href="" class="breadcrumbs__link">Главная</a> /
+                <span class="breadcrumbs__item">О компании</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-info">
+        <div class="container">
+            <h2 class="section__title">О компании</h2>
+            <div class="about-info__content df j-spc-btw">
+                <div class="about-info__content--left">
+                    <h3>Производство офисной, школьной и дошкольной мебели</h3>
+                    <button class="btn btn__orange btn__tx">Отправить ТХ на получение КП</button>
+                </div>
+                <div class="about-info__content--right df j-end a-center">
+                    <img src="img/logo-big.svg" alt="logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container df j-spc-btw">
+            <div class="about__left">
+                <img src="img/about.png" alt="about">
+                <div class="about__employer">
+                    <h4>Маргарита Скрипник</h4>
+                    <p>Специалист по оснащению: школ; офисов; детских садов; специальных учереждений, гос.учереждений. </p>
+                    <h5>Стаж работы 11 лет</h5>
+                </div>
+            </div>
+            <div class="about__right">
+
+                <h2 class="about__title">
+                    КОМПЛЕКСНОЕ ОСНАЩЕНИЕ ШКОЛ, ДЕТСКИХ САДОВ И ДРУГИХ СОЦИАЛЬНЫХ ОБЪЕКТОВ ПОД КЛЮЧ
+                </h2>
+                <p class="about__text">Мы предлагаем не только опыт и знания наших специалистов, безопасность оборудования, но и самое выгодное коммерческое предложение</p>
+                <h4>Этапы работ</h4>
+                <ul>
+                    <li>Получаем техническое задание</li>
+                    <li>Производим расчет</li>
+                    <li>Подписываем договор</li>
+                    <li>Доставка</li>
+                    <li>Сборка и монтаж оборудования</li>
+                </ul>
+
+                <button class="btn btn__orange btn__request">Заказать звонок</button>
+            </div>
+        </div>
+    </section>
+    <section class="about-contacts">
+        <div class="container">
+
+             <div class="about-contacts__list df">
+                <div class="about-contacts__left df f-wrap">
+                    <div class="about-contacts__address">
+                        <h2>Адрес офиса</h2>
+                        <p>105094, г. Москва, ул. Золотая, д. 11, стр. 2, оф. 238</p>
+                    </div>
+                    <div class="about-contacts__company">
+                        <h2>5000 компаний</h2>
+                        <p>из сфер строительства, производства, <br>
+                            услуг и торговли обслуживаем <br>
+                            ежемесячно</p>
+                        <button class="btn btn__orange btn__product-request">Оставить заявку</button>
+                    </div>
+                    <div class="about-contacts__story">
+                        <h2>10 лет</h2>
+                        <p>заботимся о наших клиентах – <br>
+                            предлагаем низкие цены.</p>
+                    </div>
+                </div>
+                <div class="about-contacts__right">
+                    <div class="about-contacts__brands">
+                        <h2>12 000 брендов</h2>
+                        <p>представлено на нашем сайте – от
+                            профессиональных до экономкласса</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <h2 class="section__title">Часто задаваемые вопросы</h2>
+            <div class="faq__content">
+                <div class="faq__item">
+                    <button class="accordion">Возможен ли самовывоз товара?</button>
+                    <div class="panel">
+                        <p>Доставка по городу осуществляется в течении 1-3 дней с момента оформления заказа. Предварительно менеджер связывается с Вами и согласовывает наиболее подходящее для Вас время. Доставка по городу осуществляется в течении 1-3 дней с момента оформления заказа. Предварительно менеджер связывается с Вами и согласовывает наиболее подходящее для Вас время.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="accordion">Сколько стоит доставка товара?</button>
+                    <div class="panel">
+                        <p>Доставка по городу осуществляется в течении 1-3 дней с момента оформления заказа. Предварительно менеджер связывается с Вами и согласовывает наиболее подходящее для Вас время. Доставка по городу осуществляется в течении 1-3 дней с момента оформления заказа. Предварительно менеджер связывается с Вами и согласовывает наиболее подходящее для Вас время.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="accordion">Как проходит оснащение школы?</button>
+                    <div class="panel">
+                        <p>Доставка по городу осуществляется в течении 1-3 дней с момента оформления заказа. Предварительно менеджер связывается с Вами и согласовывает наиболее подходящее для Вас время. Доставка по городу осуществляется в течении 1-3 дней с момента оформления заказа. Предварительно менеджер связывается с Вами и согласовывает наиболее подходящее для Вас время.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="accordion">Как быстро производится доставка товара по Краснодару?</button>
+                    <div class="panel">
+                        <p>Доставка по городу осуществляется в течении 1-3 дней с момента оформления заказа. Предварительно менеджер связывается с Вами и согласовывает наиболее подходящее для Вас время. Доставка по городу осуществляется в течении 1-3 дней с момента оформления заказа. Предварительно менеджер связывается с Вами и согласовывает наиболее подходящее для Вас время.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info ">
+        <div class="container df">
+            <div class="info__left">
+                <h2>Комплексное оснащение школ</h2>
+                <p>Все используемые предметы должны быть максимально комфортными, безопасными и функциональными. Если помещение небольшое, стоит отдавать предпочтение универсальным предметам, способным выполнять сразу несколько функций. Конкретное количество предметов рассчитывается заранее.</p>
+                <p>Для персонала следует подобрать удобные рабочие кресла, за которым комфортно проводить много времени и не нагружать спину. Кресло руководителя должно выглядеть солидно, быть изготовленным из натуральной или экокожи, с удобными подлокотниками. Не стоит забывать о стульях для посетителей, которые ставятся в приемной, комнате для переговоров, в холле. Если планируется прием большого количества посетителей, лучше купить скамьи и банкетки.</p>
+                <button class="btn btn__orange btn__product-request">Оставить заявку</button>
+            </div>
+            <div class="info__right">
+                <img src="img/info1.png" alt="info">
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="container">
+            <h2 class="section__title">Производители</h2>
+            <div class="partner__list swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/partner1.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner2.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner3.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner4.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner1.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner2.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner3.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner4.svg" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partner1.svg" alt="partner1">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+</main>
+<footer>
+    <div class="container">
+        <div class="footer__top df j-spc-btw">
+            <div class="footer__col">
+                <h2 class="footer__title">
+                    <a href="">Наши предложения</a>
+                </h2>
+                <div class="footer__menu df f-column">
+                    <a href="" class="footer__link">
+                        Офисная мебель
+                    </a>
+                    <a href="" class="footer__link">
+                        Мебель для детских садов
+                    </a>
+                    <a href="" class="footer__link">
+                        Школьная мебель
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">
+                    <a href="">Услуги</a>
+                </h2>
+                <div class="footer__menu df f-column">
+                    <a href="" class="footer__link">
+                        Производство
+                    </a>
+                    <a href="" class="footer__link">
+                        Доставка
+                    </a>
+                    <a href="" class="footer__link">
+                        Сборка
+                    </a>
+                    <a href="" class="footer__link">
+                        Комплексное оснащение
+                    </a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">
+                    <a href="">Клиенту</a>
+                </h2>
+                <div class="footer__menu df f-column">
+                    <a href="" class="footer__link">
+                        Новости
+                    </a>
+                    <a href="" class="footer__link">
+                        Контакты
+                    </a>
+                    <a href="" class="footer__link">
+                        О компании
+                    </a>
+                    <a href="" class="footer__link">
+                        Портфолио
+                    </a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">
+                    Контакты
+                </h2>
+                <div class="footer__contacts">
+                    <a href="" class="footer__phone">
+                        +7 (929) 902-23-44
+                    </a>
+                    <p class="footer__work">с 9:00 до 18:00</p>
+                </div>
+                <button class="btn  btn__orange btn__request">Заказать звонок</button>
+                <div class="footer__contacts">
+                    <a href="mailto:info@gcosnova.ru" class="footer__email">
+                        info@gcosnova.ru
+                    </a>
+                    <p class="footer__address">105094, г. Москва, ул. Золотая, д. 11, стр. 2, оф. 238</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__bottom df j-spc-btw">
+            <div class="footer__col">
+                <a href="index.html" class="footer__logo df a-end">
+                    <img src="img/logo.svg" alt="logo">
+                    кафчиково
+                </a>
+            </div>
+            <div class="footer__col">
+                <p>© 2023 agrachoff.ru</p>
+                <p>Вся представленная на сайте информация, касающаяся характеристик продуктов, наличия на складе, стоимости товаров, носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса Российской Федерации. </p>
+                <p>
+                    <a href="">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="">
+                        Политика обработки файлов cookie
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal modal__request" id="tx-modal">
+    <div class="modal__content">
+
+        <button class="btn btn__close"></button>
+        <div class="modal__info">
+            <h2 class="modal__title">Отправить ТХ <br>
+                на получение КП</h2>
+            <form action="" class="modal__form">
+                <div class="form__row df f-column">
+                    <label for="">Контактное лицо</label>
+                    <input type="text" class="form__input    " placeholder="Контактное лицо">
+                </div>
+                <div class="form__row df f-column">
+                    <label for="">Электронная почта</label>
+                    <input type="email" class="form__input " placeholder="Электронная почта">
+                </div>
+                <div class="form__row df f-column">
+                    <label for="">Телефон</label>
+                    <input type="tel" class="form__input js-phone-mask" placeholder="+7(123) 123-45-67">
+                </div>
+                <div class="form__row df f-column">
+
+                    <input type="file" id="file" class="form__input dn">
+                    <div class="file__upload df j-center a-center" id="custom-file">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 14C3.55228 14 4 14.4477 4 15V19C4 19.2652 4.10536 19.5196 4.29289 19.7071C4.48043 19.8946 4.73478 20 5 20H19C19.2652 20 19.5196 19.8946 19.7071 19.7071C19.8946 19.5196 20 19.2652 20 19V15C20 14.4477 20.4477 14 21 14C21.5523 14 22 14.4477 22 15V19C22 19.7957 21.6839 20.5587 21.1213 21.1213C20.5587 21.6839 19.7957 22 19 22H5C4.20435 22 3.44129 21.6839 2.87868 21.1213C2.31607 20.5587 2 19.7956 2 19V15C2 14.4477 2.44772 14 3 14Z" fill="#979797"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289L12 13.5858L16.2929 9.29289C16.6834 8.90237 17.3166 8.90237 17.7071 9.29289C18.0976 9.68342 18.0976 10.3166 17.7071 10.7071L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L6.29289 10.7071C5.90237 10.3166 5.90237 9.68342 6.29289 9.29289Z" fill="#979797"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C12.5523 2 13 2.44772 13 3V15C13 15.5523 12.5523 16 12 16C11.4477 16 11 15.5523 11 15V3C11 2.44772 11.4477 2 12 2Z" fill="#979797"/>
+                        </svg>
+                        Загрузить файл
+                    </div>
+                </div>
+                <div class="form__row df a-center  j-spc-btw">
+                    <button class="btn btn__orange">Оставить заявку</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal modal__request" id="request-modal">
+    <div class="modal__content">
+
+        <button class="btn btn__close"></button>
+        <div class="modal__info">
+            <h2 class="modal__title">Заказать</h2>
+            <form action="" class="modal__form">
+                <div class="form__row df f-column">
+                    <label for="">Телефон</label>
+                    <input type="tel" class="form__input js-phone-mask" placeholder="+7(123) 123-45-67">
+                </div>
+                <div class="form__row df a-center  j-spc-btw">
+                    <button class="btn btn__orange">Заказать звонок</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal modal__request" id="request-product-modal">
+    <div class="modal__content">
+
+        <button class="btn btn__close"></button>
+        <div class="modal__info">
+            <h2 class="modal__title"> Оставить заявку</h2>
+            <form action="" class="modal__form">
+                <div class="form__row df f-column">
+                    <label for="">Контактное лицо</label>
+                    <input type="text" class="form__input    " placeholder="Контактное лицо">
+                </div>
+                <div class="form__row df f-column">
+                    <label for="">Электронная почта</label>
+                    <input type="email" class="form__input " placeholder="Электронная почта">
+                </div>
+                <div class="form__row df f-column">
+                    <label for="">Телефон</label>
+                    <input type="tel" class="form__input js-phone-mask" placeholder="+7(123) 123-45-67">
+                </div>
+                <div class="form__row df a-center  j-spc-btw">
+                    <button class="btn btn__orange">Оставить заявку</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/inputMask/inputmask.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
