@@ -509,7 +509,7 @@ header{
     height: 141px;
 }
 .product:hover .btn__buy{
-    bottom: 19px;
+    bottom: 17px;
 }
 .product__settings{
     transition: all .3s linear;
