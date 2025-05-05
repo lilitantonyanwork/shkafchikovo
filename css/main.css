@@ -3122,3 +3122,21 @@ h2.filter__title{
 .navbar__login:hover .user-menu{
     display: block;
 }
+.fslightbox-slide-btn svg{
+    display: none;
+}
+.fslightbox-slide-btn{
+    background: url('../img/arrow-right.svg') no-repeat!important;
+    width: 27px;
+    height: 74px;
+}
+.fslightbox-slide-btn-container-previous .fslightbox-slide-btn{
+    transform: rotate(180deg);
+}
+
+.fslightbox-slide-btn-container-previous {
+    left: 20px!important;
+}
+.fslightbox-slide-btn-container-next{
+    right: 20px!important;
+}
