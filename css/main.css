@@ -200,6 +200,12 @@ header{
     line-height: 25px;
     padding-left: 38px;
     padding-right: 38px;
+    transition: all .3s linear;
+}
+.btn__orange:hover{
+    color:  #e8893f;
+    background: #fff;
+    border: 2px solid #e8893f;
 }
 .banner__left:before{
     content: '';
@@ -501,6 +507,9 @@ header{
 }
 .product:hover .product__img{
     height: 141px;
+}
+.product:hover .btn__buy{
+    bottom: 19px;
 }
 .product__settings{
     transition: all .3s linear;
@@ -944,9 +953,12 @@ footer:before{
     padding: 0;
     color: #000000;
 }
-.accordion:hover, .accordion.active {
+.accordion:hover {
     background: url('../img/plus-hover.svg') no-repeat right center;
     color: #E98A3F;
+}
+.accordion.active{
+    background: url('../img/minus.svg') no-repeat right center;
 }
 .panel{
     padding-left: 110px;
@@ -1741,6 +1753,10 @@ input::placeholder {
     color: #131313;
     border-width: 2px;
 
+}
+.product__actions .btn__orange--outline:hover{
+    background: #e8893f;
+    color: #fff;
 }
 .product__actions .btn__orange{
     height: 50px;

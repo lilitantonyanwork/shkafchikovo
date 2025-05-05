@@ -1,3 +1,12 @@
+@media screen and (max-width: 1800px) {
+    .about-page .about {
+        background-size: 100% 100%;
+    }
+    .info--delivery .info__right img {
+        max-width: calc(100% - 980px);
+        width: 100%;
+    }
+}
 @media screen and (max-width: 1700px){
     .navbar .container-fluid{
         width: 100%;
@@ -9,6 +18,11 @@
     }
     .menu{
         gap: 20px;
+    }
+
+    .info--delivery .info__right img {
+        max-width: calc(100% - 880px);
+        width: 100%;
     }
 }
 @media screen and (max-width: 1600px){
@@ -34,6 +48,11 @@
     }
     .about{
         background-size: 100% 100%;
+    }
+
+    .info--delivery .info__right img {
+        max-width: calc(100% - 820px);
+        width: 100%;
     }
 }
 @media screen and (max-width: 1500px){

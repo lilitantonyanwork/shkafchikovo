@@ -3,6 +3,10 @@ var swiper = new Swiper(".banner", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 
 });
 var swiper2 = new Swiper(".products", {
@@ -95,10 +99,10 @@ var swiper4 = new Swiper(".working-with-us__partners", {
 if(document.querySelector('.portfolio__list')){
 if(document.querySelector('.portfolio__list').classList.contains('swiper')){
     var swiper5 = new Swiper(".portfolio__list", {
-
+        slidesPerView: 1,
         spaceBetween: 24,
         pagination: {
-            el: ".swiper-pagination",
+            el: ".portfolio .swiper-pagination",
             clickable: true,
         },
         navigation: {
@@ -108,14 +112,14 @@ if(document.querySelector('.portfolio__list').classList.contains('swiper')){
     });
 }
 }
-const swiper6 = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    allowTouchMove: false // Keeps the layout static
-});
+// const swiper6 = new Swiper(".mySwiper", {
+//     slidesPerView: 1,
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+//     allowTouchMove: false // Keeps the layout static
+// });
 var swiper7 = new Swiper(".mySwiper3", {
     spaceBetween: 2,
     slidesPerView: 4,
@@ -330,6 +334,8 @@ const modalRequest1 = document.getElementById("request-product-modal");
 const modalRequest2 = document.getElementById("tx-modal");
 const openRequest = document.querySelectorAll(".btn__request");
 const openRequest1 = document.querySelectorAll(".btn__product-request");
+const openRequest3 = document.querySelectorAll(".btn__buy");
+const openRequest4 = document.querySelectorAll(".product__actions .btn__orange--outline");
 const openRequest2 = document.querySelectorAll(".btn__tx");
 const closeBtn = document.querySelectorAll(".btn__close");
 
@@ -362,6 +368,28 @@ if (openRequest2){
         button.addEventListener("click", (event) => {
             event.preventDefault();
             modalRequest2.style.display = "flex";
+        });
+    })
+
+
+}
+if (openRequest3){
+
+    openRequest3.forEach(button => {
+        button.addEventListener("click", (event) => {
+            event.preventDefault();
+            modalRequest1.style.display = "flex";
+        });
+    })
+
+
+}
+if (openRequest4){
+
+    openRequest4.forEach(button => {
+        button.addEventListener("click", (event) => {
+            event.preventDefault();
+            modalRequest1.style.display = "flex";
         });
     })
 
@@ -479,4 +507,71 @@ phoneInputs.forEach(function (input) {
     };
 
     Inputmask(maskOptions).mask(input);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    console.log('aaa')
+    const minusBtn = document.querySelector(".btn__minus");
+    const plusBtn = document.querySelector(".btn__plus");
+    const quantityInput = document.getElementById("quantity");
+    const quantityDisplay = document.querySelector(".product__input span");
+
+
+    const minQuantity = 1;
+
+    if(plusBtn){
+
+        plusBtn.addEventListener("click", function () {
+            let currentValue = parseInt(quantityInput.value);
+            currentValue++;
+            quantityInput.value = currentValue;
+            quantityInput.dataset.value = currentValue;
+            quantityDisplay.textContent = currentValue;
+        });
+    }
+
+  if (minusBtn){
+    minusBtn.addEventListener("click", function () {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > minQuantity) {
+            currentValue--;
+            quantityInput.value = currentValue;
+            quantityInput.dataset.value = currentValue;
+            quantityDisplay.textContent = currentValue;
+        }
+    });
+  }
+
+});
+document.addEventListener("DOMContentLoaded", function () {
+    if (document.querySelector('main').classList.contains('order-page')){
+        const quantityBlocks = document.querySelectorAll(".product__quantity ");
+
+    quantityBlocks.forEach(block => {
+        const minusBtn = block.querySelector(".btn__minus");
+        const plusBtn = block.querySelector(".btn__plus");
+        const quantityInput = block.querySelector("input[type='hidden']");
+        const quantityDisplay = block.querySelector(".product__input span");
+
+        const minQuantity = 1;
+
+        plusBtn.addEventListener("click", function () {
+            let currentValue = parseInt(quantityInput.value);
+            currentValue++;
+            quantityInput.value = currentValue;
+            quantityInput.dataset.value = currentValue;
+            quantityDisplay.textContent = currentValue;
+        });
+
+        minusBtn.addEventListener("click", function () {
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue > minQuantity) {
+                currentValue--;
+                quantityInput.value = currentValue;
+                quantityInput.dataset.value = currentValue;
+                quantityDisplay.textContent = currentValue;
+            }
+        });
+    });
+}
 });
